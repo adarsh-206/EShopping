@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+html {
+    font-family: "DM Sans", sans-serif;
+}
+
+.hero-icon {
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-icon {
+        font-size: 1.2rem;
+    }
+}
