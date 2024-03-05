@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { FaShopware, FaBars, FaTimes } from 'react-icons/fa';
+import { FaShopware, FaBars, FaTimes, FaUser } from 'react-icons/fa';
+import { BsCart4 } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -8,8 +9,8 @@ const Navbar = () => {
         { name: "Men", link: "/men" },
         { name: "Women", link: "/women" },
         { name: "Kids", link: "/kids" },
-        { name: "Cart", link: "/cart" },
-        { name: "Profile", link: "/profile" },
+        { name: <BsCart4 size={18} />, link: "/cart" },
+        { name: <FaUser size={16} />, link: "/login" },
     ];
     let [open, setOpen] = useState(false);
 
